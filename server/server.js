@@ -7,7 +7,7 @@ const publicPath = path.join(__dirname, '../public');
 const app = express();
 const server = http.createServer(app);
 const io = socketIO(server);
-const {generateMessage} = require('./utils/message');
+const { generateMessage } = require('./utils/message');
 
 io.on('connection', socket => {
     console.log('New user connected');
